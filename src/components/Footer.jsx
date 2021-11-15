@@ -1,8 +1,21 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 const Footer = () => {
+    const year = new Date().getFullYear();
+
     return (
-        <h1>Footer</h1>
+        <div className="Footer">
+            <Container>
+                <Row>
+                    <Col>
+                        <p>© {year} Playgrounds Inc. All Rights Reserved.</p>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     );
 }
 
