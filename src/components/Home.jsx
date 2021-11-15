@@ -13,7 +13,7 @@ const Home = (props) => {
                         <Col lg="4" md="6" key={item.id}>
                             <Card>
                                 <Card.Body>
-                                    <Card.Title>{item.id}. {item.title}</Card.Title>
+                                    <Card.Title>{Number(item.id)+1}. {item.title}</Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">{item.description}</Card.Subtitle>
                                     <Card.Link href={item.website} target="_blank">Website</Card.Link>
                                     <Card.Link href={item.imageUrl} target="_blank">Another Link</Card.Link>
